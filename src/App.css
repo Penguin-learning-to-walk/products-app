@@ -1,0 +1,61 @@
+#root {
+  max-width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5.16rem;
+  row-gap: 2rem;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.posts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.posts-list li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.pagination li.active button {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination li button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.containerLoder {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}

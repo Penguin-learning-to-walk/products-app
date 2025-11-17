@@ -1,0 +1,22 @@
+.image-uploader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-preview-img {
+  width: 232px;
+  height: 232px;
+  border: 1px solid #ccc;
+}
+
+.no-image-placeholder {
+  width: 232px;
+  height: 232px;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Products } from './Product/Pages/Products'
 import { ProductId } from './Product/Pages/ProductId'
 import { ProductCreate } from './Product/Pages/ProductCreate'
@@ -20,14 +20,14 @@ function App() {
           Loading data......
         </div>
       ) : (
-        <Router>
+        <BrowserRouter basename='/products-app'>
           <Routes>
             <Route index element={<Products />} />
             <Route path='/products' element={<Products />} />
             <Route path='/products/:id' element={<ProductId />} />
             <Route path='/products/create-product' element={<ProductCreate />} />
           </Routes>
-        </Router>
+        </BrowserRouter>
       )}
     </>
   )
